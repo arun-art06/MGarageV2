@@ -1,0 +1,22 @@
+<div class="work-item" id="#=ID#">
+    <div class="position-left">
+        <img src="${image}?height=50&width=50&mode=crop" style="" />
+    </div>
+    <div class="position-right">
+        # if (status=="I") { #
+        <div class="itemliststyle-status">WIP</div>
+        <i class="fa fa-refresh fa-2x itemliststyle-status-icon" />
+        # } else if (status=="R"){ #
+        <div class="itemliststyle-status">Ready</div>
+        <i class="fa fa-check-circle-o fa-2x itemliststyle-status-icon" />
+        # } #   
+    </div>
+    <div class="position-center">
+        <div class="itemliststyle-brand">${brand}</div>
+        <div class="itemliststyle-model">${model}</div>
+        <div class="itemliststyle-plate">${plate}</div>
+    </div>
+    <div class="downArrow">
+        <img src="./../css/images/downArrow.png" data-garageid="#=ID#" class="downarrow" alt="Mountain View" style="">
+    </div>
+</div>
